@@ -1,17 +1,24 @@
 <?php
 //hi
-$saludos = "Hello, World\n";
+$saludos = "Hello, Wooorld. ";
+$cursSaludos = "Aquest és el curs de PHP";
+
 echo $saludos.PHP_EOL . "<br>";
 
 //mayus
-echo $saludos = strtoupper($saludos).PHP_EOL  . "<br>";
+$saludos = strtoupper($saludos).PHP_EOL;
+echo $saludos.'<br>';
 
 //length
 echo strlen($saludos).PHP_EOL . "<br>";
 
 //invers
 /*for($i = 0; $i < strlen($saludos); $i++){}*/
-strrev($saludos).PHP_EOL . "<br>";
+echo strrev($saludos) . "<br>";
+
+//concatenació
+echo $saludos . $cursSaludos;
+
 
 
 
