@@ -19,29 +19,33 @@ echo $n - $m.PHP_EOL;
 echo $n * $m.PHP_EOL;
 echo $n % $m.PHP_EOL;
 
-echo $x*$x + " " +  $y*$y + " " +  $n*$n + " " +  $m*$m.PHP_EOL;
+echo $x*$x . " " . $y*$y . " " .  $n*$n . " " . $m*$m.PHP_EOL;
 echo $x+$y+$n+$m.PHP_EOL;
 echo $x*$y*$n*$m.PHP_EOL;
 
+echo Calculadora(4, 7, "division");
+
 //b)
-function Calculadora ($num1, $num2, $operation){
+ function Calculadora ($num1, $num2, $operation): void{
+    $result = "";
     switch($operation){
         case "suma":
-            echo $num1 + $num2.PHP_EOL;
+            $result = $num1 + $num2.PHP_EOL;
             break;
         
         case "resta":
-            $num1 - $num2.PHP_EOL;
+            $result = $num1 - $num2.PHP_EOL;
             break;
 
         case "division":
-            $num1/$num2;
+            $result = $num1/$num2;
             break;
 
         case "multiplicacion":
-            $num1*$num2;
+            $result = $num1*$num2;
             break;
     }
+    echo $result;
 }
 
 ?>
