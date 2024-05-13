@@ -25,22 +25,23 @@ echo $x*$y*$n*$m.PHP_EOL;
 
 //b)
 function Calculadora ($num1, $num2, $operation){
-switch($operation){
-    case "suma":
-        echo $num1 + $num2.PHP_EOL;
-        break;
-    
-    case "resta":
-        $num1 - $num2.PHP_EOL;
-        break;
+    switch($operation){
+        case "suma":
+            echo $num1 + $num2.PHP_EOL;
+            break;
+        
+        case "resta":
+            $num1 - $num2.PHP_EOL;
+            break;
 
-    case "division":
-        $num1/$num2;
-        break;
+        case "division":
+            $num1/$num2;
+            break;
 
-    case "multiplicacion":
-        $num1*$num2;
-        break;
+        case "multiplicacion":
+            $num1*$num2;
+            break;
+    }
 }
-}
+
 ?>
