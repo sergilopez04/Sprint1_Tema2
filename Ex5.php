@@ -5,19 +5,20 @@ echo CheckGrade(33).PHP_EOL;
 echo CheckGrade(45).PHP_EOL;
 echo CheckGrade(89).PHP_EOL;
 
-function CheckGrade ($grade){
+function CheckGrade($grade){
     if ($grade >= 60) {
         echo "Hauries de ser de Primera Divisió :)";
     }
-    elseif ($grade >= 45 && $grade < 60) {
+    elseif ($grade >= 45) {
         echo "Hauries de ser de Segona Divisió :))";
     }
-    elseif ($grade < 45 && $grade >= 33) {
+    elseif ($grade >= 33) {
         echo "Hauries de ser de Tercera Divisió :))";
     }
-    else{
+    else {
         echo "A estudiar, amore";
     }
 }
+
 
 ?>

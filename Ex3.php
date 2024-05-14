@@ -23,10 +23,10 @@ echo $x*$x . " " . $y*$y . " " .  $n*$n . " " . $m*$m.PHP_EOL;
 echo $x+$y+$n+$m.PHP_EOL;
 echo $x*$y*$n*$m.PHP_EOL;
 
-echo Calculator(4, 7, "division");
+echo calculate(4, 7, "division");
 
 //b)
- function Calculator ($num1, $num2, $operation): void{
+ function calculate(int $num1, int $num2,string $operation): void{
     $result = "";
     switch($operation){
         case "suma":

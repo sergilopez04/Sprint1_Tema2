@@ -1,5 +1,5 @@
 <?php
-const nomCognom = "Sergi López";
+define("nomCognom", "Sergi López");
 
 $numInt = 10;
 $numDouble = 70.5;
